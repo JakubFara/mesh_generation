@@ -1,6 +1,15 @@
 from generate_mesh import MeshLoader
 
 
+"""
+we transform meshes from .msh format into .h5 format into group
+/mesh
+if there is a physical group if will be stored into
+/cell_marker
+/facet_marker
+"""
+
+
 def cibule_fsi():
     cell_type = 'triangle'
     filename = 'gmsh/data/cibule_fsi_mesh.msh'

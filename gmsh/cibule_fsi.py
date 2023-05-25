@@ -50,7 +50,9 @@ points_outer = [
     gmsh.model.geo.add_point(Win + size_valve, p1y, 0, lc),
 ]
 for i, p in enumerate(zz):
-    points_outer.append(gmsh.model.geo.add_point(rr[i] + size_valve, zz[i], 0, lc))
+    points_outer.append(
+        gmsh.model.geo.add_point(rr[i] + size_valve, zz[i], 0, lc)
+    )
 
 # points.append(gmsh.model.geo.add_point(Wout, Len, 0, lc))
 points_outer.extend([
